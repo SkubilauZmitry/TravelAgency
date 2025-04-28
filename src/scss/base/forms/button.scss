@@ -2,8 +2,11 @@
 // Сніппет (HTML): btn
 
 .button {
+	// position: relative;
+	// z-index: 150;
 	display: inline-flex;
 	padding: 0px 0px;
+
 	@media (any-hover: hover) {
 		&:hover {
 		}

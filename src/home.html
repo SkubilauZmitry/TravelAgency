@@ -8,22 +8,114 @@
         <section class="section-one">
           <div class="section-one__background">
             <img src="@img/section-one/background.jpg" alt="Image" />
-            <div class="section-one__box-text">
-              <h1 class="section-one__title">Enjoy in the best way!</h1>
-              <h2 class="section-one__subtitle">
-                Enjoy our services for your trip anytime
-              </h2>
+
+            <div class="section-one__container">
+              <div class="section-one__box-text">
+                <h1 class="section-one__title">Enjoy in the best way!</h1>
+                <h2 class="section-one__subtitle">
+                  Enjoy our services for your trip anytime
+                </h2>
+              </div>
+              <div class="section-one__form">
+                <div class="section-one__form-block">Public Tours</div>
+                <div class="section-one__form-block-two">Private Tours</div>
+
+                <form
+                  action="files/sendmail/sendmail.php"
+                  method="POST"
+                  class="form-one form"
+                >
+                  <div class="form__select-number select-box">
+                    <label class="form__select-number-text select-text">
+                      Number of people
+                    </label>
+                    <select
+                      name="form[]"
+                      data-class-modif="form"
+                      class="select"
+                    >
+                      <option value="1" selected>Choose Number</option>
+                      <option value="2">1</option>
+                      <option value="3">2</option>
+                      <option value="4">3</option>
+                      <option value="5">4</option>
+                      <option value="6">5</option>
+                      <option value="7">6</option>
+                      <option value="8">7</option>
+                      <option value="9">8</option>
+                      <option value="10">9</option>
+                      <option value="11">10</option>
+                    </select>
+                  </div>
+                  <div class="form__select-date select-box">
+                    <label class="form__select-date-text select-text">
+                      Date
+                    </label>
+                    <input
+                      data-datepicker
+                      type="text"
+                      name="form[date]"
+                      class="input"
+                      placeholder="Choose Date"
+                    />
+                  </div>
+                  <div class="form__select-time select-box">
+                    <label class="form__select-time-text select-text"
+                      >Time</label
+                    >
+                    <select
+                      name="form[]"
+                      data-class-modif="form"
+                      class="select"
+                    >
+                      <option value="1" selected>Choose Time</option>
+                      <option value="2">1:00am</option>
+                      <option value="3">2:00am</option>
+                      <option value="4">3:00am</option>
+                      <option value="5">4:00am</option>
+                      <option value="6">5:00am</option>
+                    </select>
+                  </div>
+                  <div class="form__select-tour select-box">
+                    <label class="form__select-tour-text select-text"
+                      >Tour</label
+                    >
+                    <select
+                      name="form[]"
+                      data-class-modif="form"
+                      class="select"
+                    >
+                      <option value="1" selected>Select Tour</option>
+                      <option value="2">Lucca Bike Tour</option>
+                      <option value="3">Book a bike</option>
+                      <option value="4">Tour in the outside of Lucca</option>
+                      <option value="5">Wine Tasting in Tuscany</option>
+                      <option value="6">Cinque Terre Tour</option>
+                      <option value="7">Siena and Surroundings</option>
+                      <option value="8">Pisa & Lucca</option>
+                      <option value="9">Italy Special Trips</option>
+                      <option value="9">Florence</option>
+                    </select>
+                  </div>
+                  <div class="form__select-transportation select-box">
+                    <label class="form__select-transportation-text select-text">
+                      Transportation
+                    </label>
+                    <select
+                      name="form[]"
+                      data-class-modif="form"
+                      class="select"
+                    >
+                      <option value="1" selected>Select Transportation</option>
+                      <option value="2">Minivan and Bus</option>
+                      <option value="3">Transfers & NCC</option>
+                      <option value="4">Luxury Experience</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="button"></button>
+                </form>
+              </div>
             </div>
-            <form action="files/sendmail/sendmail.php" method="POST">
-              <input
-                type="text"
-                name="form[email]"
-                data-error="Error"
-                placeholder="E-mail"
-                class="input"
-              />
-              <button type="submit" class="button">Send</button>
-            </form>
           </div>
         </section>
       </main>

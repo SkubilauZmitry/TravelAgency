@@ -171,7 +171,9 @@
 	-webkit-transition: -webkit-filter 0.3s;
 	transition: -webkit-filter 0.3s;
 	transition: filter 0.3s;
-	transition: filter 0.3s, -webkit-filter 0.3s;
+	transition:
+		filter 0.3s,
+		-webkit-filter 0.3s;
 }
 .qs-datepicker .qs-controls.qs-blur {
 	-webkit-filter: blur(5px);
@@ -250,7 +252,9 @@
 	-webkit-transition: -webkit-filter 0.3s;
 	transition: -webkit-filter 0.3s;
 	transition: filter 0.3s;
-	transition: filter 0.3s, -webkit-filter 0.3s;
+	transition:
+		filter 0.3s,
+		-webkit-filter 0.3s;
 }
 .qs-datepicker .qs-squares.qs-blur {
 	-webkit-filter: blur(5px);

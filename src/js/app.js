@@ -117,7 +117,7 @@ flsForms.formFieldsInit({
 
 /* Надсилання форми */
 /* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Модуль форми "кількість" */
 // flsForms.formQuantity();
@@ -126,10 +126,10 @@ flsForms.formFieldsInit({
 // flsForms.formRating();
 
 /* Модуль роботи з select. */
-// import './libs/select.js'
+import './libs/select.js'
 
 /* Модуль роботи з календарем */
-// import './files/forms/datepicker.js'
+import './files/forms/datepicker.js'
 
 /* (У роботі) Модуль роботи з масками.*/
 /*

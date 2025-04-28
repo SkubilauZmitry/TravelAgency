@@ -1,7 +1,7 @@
 // <SELECT>
 // Сніппет (HTML): sel
 .select {
-	min-width: 0;
+	min-width: 120px;
 	position: relative;
 	// .select__body
 	&__body {
@@ -11,11 +11,31 @@
 	&__title {
 		color: inherit;
 		text-align: left;
-		border: 1px solid #d9d9d9;
 		background-color: #fff;
+		letter-spacing: 1px;
 		cursor: pointer;
 		width: 100%;
 		border-radius: 4px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 7px;
+			height: 1.2px;
+			background-color: #8e8e8e;
+			top: 15px;
+			right: -5px;
+			transform: rotate(-45deg);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 1.2px;
+			background-color: #8e8e8e;
+			top: 15px;
+			right: 0px;
+			transform: rotate(45deg);
+		}
 	}
 	// .select__value
 	&__value {
@@ -23,7 +43,7 @@
 		min-width: 0;
 		align-items: center;
 		height: toRem(30);
-		padding: 0 toRem(15);
+		padding: 0 toRem(0);
 		gap: toRem(10);
 		> * {
 			flex: 1 1 auto;
@@ -79,6 +99,7 @@
 		border: 1px solid #d9d9d9;
 		border-top: 0;
 		padding: 10px 0px 5px 0px;
+		color: #8e8e8e;
 	}
 	// .select__scroll
 	&__scroll {
@@ -105,7 +126,9 @@
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				background: #d9d9d9;
+				background: #fa8b02;
+				color: #fff;
+				transition: all 0.1s;
 			}
 		}
 	}
