@@ -5,6 +5,7 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
+        <!-- section-one -->
         <section class="section-one">
           <div class="section-one__background">
             <img src="@img/section-one/background.jpg" alt="Image" />
@@ -17,104 +18,366 @@
                 </h2>
               </div>
               <div class="section-one__form">
-                <div class="section-one__form-block">Public Tours</div>
-                <div class="section-one__form-block-two">Private Tours</div>
-
-                <form
-                  action="files/sendmail/sendmail.php"
-                  method="POST"
-                  class="form-one form"
-                >
-                  <div class="form__select-number select-box">
-                    <label class="form__select-number-text select-text">
-                      Number of people
-                    </label>
-                    <select
-                      name="form[]"
-                      data-class-modif="form"
-                      class="select"
-                    >
-                      <option value="1" selected>Choose Number</option>
-                      <option value="2">1</option>
-                      <option value="3">2</option>
-                      <option value="4">3</option>
-                      <option value="5">4</option>
-                      <option value="6">5</option>
-                      <option value="7">6</option>
-                      <option value="8">7</option>
-                      <option value="9">8</option>
-                      <option value="10">9</option>
-                      <option value="11">10</option>
-                    </select>
-                  </div>
-                  <div class="form__select-date select-box">
-                    <label class="form__select-date-text select-text">
-                      Date
-                    </label>
-                    <input
-                      data-datepicker
-                      type="text"
-                      name="form[date]"
-                      class="input"
-                      placeholder="Choose Date"
-                    />
-                  </div>
-                  <div class="form__select-time select-box">
-                    <label class="form__select-time-text select-text"
-                      >Time</label
-                    >
-                    <select
-                      name="form[]"
-                      data-class-modif="form"
-                      class="select"
-                    >
-                      <option value="1" selected>Choose Time</option>
-                      <option value="2">1:00am</option>
-                      <option value="3">2:00am</option>
-                      <option value="4">3:00am</option>
-                      <option value="5">4:00am</option>
-                      <option value="6">5:00am</option>
-                    </select>
-                  </div>
-                  <div class="form__select-tour select-box">
-                    <label class="form__select-tour-text select-text"
-                      >Tour</label
-                    >
-                    <select
-                      name="form[]"
-                      data-class-modif="form"
-                      class="select"
-                    >
-                      <option value="1" selected>Select Tour</option>
-                      <option value="2">Lucca Bike Tour</option>
-                      <option value="3">Book a bike</option>
-                      <option value="4">Tour in the outside of Lucca</option>
-                      <option value="5">Wine Tasting in Tuscany</option>
-                      <option value="6">Cinque Terre Tour</option>
-                      <option value="7">Siena and Surroundings</option>
-                      <option value="8">Pisa & Lucca</option>
-                      <option value="9">Italy Special Trips</option>
-                      <option value="9">Florence</option>
-                    </select>
-                  </div>
-                  <div class="form__select-transportation select-box">
-                    <label class="form__select-transportation-text select-text">
-                      Transportation
-                    </label>
-                    <select
-                      name="form[]"
-                      data-class-modif="form"
-                      class="select"
-                    >
-                      <option value="1" selected>Select Transportation</option>
-                      <option value="2">Minivan and Bus</option>
-                      <option value="3">Transfers & NCC</option>
-                      <option value="4">Luxury Experience</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="button"></button>
-                </form>
+                <div class="section-one__form-block" data-da=".form, 768,0">
+                  Public Tours
+                </div>
+                <div class="section-one__form-block-two" data-da=".form, 768,0">
+                  Private Tours
+                </div>
+                <div class="section-one-form-one">
+                  <form
+                    action="files/components/sendmail/sendmail.phpn"
+                    method="POST"
+                    class="form-one form"
+                  >
+                    <div class="form__select-number select-box">
+                      <label
+                        for="select-input"
+                        class="form__select-time-text select-text"
+                      >
+                        Number of people
+                      </label>
+                      <select
+                        name="form[]"
+                        data-class-modif="form"
+                        class="select"
+                        id="select-input"
+                      >
+                        <option value="1" selected>Choose Number</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                        <option value="6">5</option>
+                        <option value="7">6</option>
+                        <option value="8">7</option>
+                        <option value="9">8</option>
+                        <option value="10">9</option>
+                        <option value="11">10</option>
+                      </select>
+                    </div>
+                    <div class="form__select-date select-box">
+                      <label class="form__select-date-text select-text">
+                        Date
+                      </label>
+                      <input
+                        data-datepicker
+                        type="text"
+                        name="form[date]"
+                        class="input"
+                        placeholder="Choose Date"
+                      />
+                    </div>
+                    <div class="form__select-time select-box">
+                      <label class="form__select-time-text select-text"
+                        >Time</label
+                      >
+                      <select
+                        name="form[]"
+                        data-class-modif="form"
+                        class="select"
+                      >
+                        <option value="1" selected>Choose Time</option>
+                        <option value="2">1:00am</option>
+                        <option value="3">2:00am</option>
+                        <option value="4">3:00am</option>
+                        <option value="5">4:00am</option>
+                        <option value="6">5:00am</option>
+                      </select>
+                    </div>
+                    <div class="form__select-tour select-box">
+                      <label class="form__select-tour-text select-text"
+                        >Tour</label
+                      >
+                      <select
+                        name="form[]"
+                        data-class-modif="form"
+                        class="select"
+                      >
+                        <option value="1" selected>Select Tour</option>
+                        <option value="2">Lucca Bike Tour</option>
+                        <option value="3">Book a bike</option>
+                        <option value="4">Tour in the outside of Lucca</option>
+                        <option value="5">Wine Tasting in Tuscany</option>
+                        <option value="6">Cinque Terre Tour</option>
+                        <option value="7">Siena and Surroundings</option>
+                        <option value="8">Pisa & Lucca</option>
+                        <option value="9">Italy Special Trips</option>
+                        <option value="9">Florence</option>
+                      </select>
+                    </div>
+                    <div class="form__select-transportation select-box">
+                      <label
+                        class="form__select-transportation-text select-text"
+                      >
+                        Transportation
+                      </label>
+                      <select
+                        name="form[]"
+                        data-class-modif="form"
+                        class="select"
+                      >
+                        <option value="1" selected>
+                          Select Transportation
+                        </option>
+                        <option value="2">Minivan and Bus</option>
+                        <option value="3">Transfers & NCC</option>
+                        <option value="4">Luxury Experience</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="button"></button>
+                  </form>
+                </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section-two -->
+        <section class="section-two">
+          <div class="section-two__container">
+            <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+            <div class="section-two__box-row">
+              <h3 class="section-two__title-slider">
+                Explore Our Popular Destinantions
+              </h3>
+              <div class="section-two__box-button">
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
+              </div>
+            </div>
+            <!-- Оболонка слайдера -->
+            <div class="section-two__slider swiper">
+              <!-- Частина слайдера, що рухається -->
+              <div class="section-two__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд -->
+                <div class="section-two__slide swiper-slide">
+                  <article class="section-two__article">
+                    <div class="section-two__article-image">
+                      <a href="#">
+                        <img src="@img/section-two/1.png " alt="Image" />
+                      </a>
+                    </div>
+                    <h4 class="section-two__article-title">
+                      <a href="#">Lucca Bike Tour</a>
+                    </h4>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text">from</div>
+                      <div class="section-two__article-number">34 €</div>
+                    </div>
+                    <div class="section-two__article-box-row">
+                      <div class="section-two__article-text-two">EVERY DAY</div>
+                      <div class="section-two__article-text-three">3-10 PP</div>
+                    </div>
+                    <div class="section-two__article-text-four">
+                      A tour of the city and its surroundings led by a
+                      professional guide ...
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- Якщо потрібна пагінація -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>

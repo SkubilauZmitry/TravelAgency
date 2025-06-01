@@ -19,11 +19,11 @@
 		&::before {
 			content: "";
 			position: absolute;
-			width: 7px;
+			width: 8px;
 			height: 1.2px;
 			background-color: #8e8e8e;
 			top: 15px;
-			right: -5px;
+			right: 5px;
 			transform: rotate(-45deg);
 		}
 		&::after {
@@ -33,7 +33,7 @@
 			height: 1.2px;
 			background-color: #8e8e8e;
 			top: 15px;
-			right: 0px;
+			right: 10px;
 			transform: rotate(45deg);
 		}
 	}
@@ -57,7 +57,7 @@
 			justify-content: center;
 			align-items: center;
 			._select-open & {
-				transform: rotate(-180deg);
+				transform: rotate(180deg);
 			}
 		}
 		&._select-pseudo-label {
@@ -73,6 +73,9 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+		@media (max-width: $mobile) {
+			padding: toRem(0) toRem(0) toRem(0) toRem(10);
+		}
 	}
 	// .select__text
 	&__text {
@@ -107,6 +110,9 @@
 		overflow-x: hidden;
 		// Максимальна висота
 		max-height: toRem(200);
+		@media (max-width: $mobile) {
+			max-height: toRem(40);
+		}
 		// Стилі скроллбару
 		.simplebar-scrollbar {
 			&::before {

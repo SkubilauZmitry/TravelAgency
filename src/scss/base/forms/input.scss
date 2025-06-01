@@ -15,7 +15,9 @@ textarea {
 	padding: 0px 20px;
 	border: 1px solid #eee;
 	caret-color: inherit;
-
+	@media (min-width: $mobile) {
+		width: 150%;
+	}
 	&._form-focus {
 	}
 	&._form-error {
