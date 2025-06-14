@@ -1,4 +1,27 @@
 //====================================================================================================
+.btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 44px;
+    background: #fa8b02;
+    border-radius: 50px;
+    &:active {
+        border: 2px solid #8f5003;
+        transition: all 0.3s;
+    }
+    @media (min-width: $mobile) {
+        &:hover {
+            color: #dddddd;
+            transition: all 0.1s;
+            font-size: toRem(20.5);
+        }
+    }
+}
+
+//========================================================================================================================================================
 
 // section-one
 
@@ -90,11 +113,21 @@
         top: 180px;
     }
 }
+
+.section-one-form-one {
+    @media (max-width: $mobile) {
+        width: 100%;
+        min-height: 270px;
+        background-color: #ffffff1b;
+        border-radius: 15px;
+    }
+}
+
 .section-one__form-block {
     position: absolute;
     z-index: 155;
     padding: 0px 0px 0px 40px;
-    top: -80px;
+    top: -70px;
     left: 33px;
     width: toRem(172);
     height: toRem(57);
@@ -136,20 +169,11 @@
     }
 }
 
-.section-one-form-one {
-    @media (max-width: $mobile) {
-        width: 100%;
-        min-height: 270px;
-        background-color: #ffffff1b;
-        border-radius: 15px;
-    }
-}
-
 .section-one__form-block-two {
     position: absolute;
     z-index: 155;
     padding: 0px 0px 0px 40px;
-    top: -80px;
+    top: -70px;
     left: 205px;
     width: toRem(184);
     height: toRem(57);
@@ -513,11 +537,17 @@
         display: flex;
         justify-content: space-between;
         margin: toRem(0) toRem(0) toRem(40) toRem(0);
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: end;
+            margin: toRem(0) toRem(0) toRem(40) toRem(0);
+        }
     }
 
     &__title-slider {
         font-weight: 800;
         font-size: 32px;
+        font-size: toRem(32);
         line-height: 44px;
         color: #333333;
         margin: toRem(0) toRem(0) toRem(20) toRem(0);
@@ -529,6 +559,9 @@
 
     &__box-button {
         @media (max-width: $mobile) {
+            padding: toRem(20) toRem(50) toRem(0) toRem(0);
+        }
+        @media (max-width: toEm(640)) {
             display: none;
         }
     }
@@ -545,7 +578,6 @@
     &__article-image {
         position: relative;
         padding: 0px 0px 122.973% 0px;
-        margin: toRem(0) toRem(0) toRem(15) toRem(0);
         @media (max-width: $mobile) {
             padding: 0px 0px 70.973% 0px;
             margin: 0px 0px 0px 0px;
@@ -604,12 +636,13 @@
         letter-spacing: 2px;
         color: #333333;
         margin: toRem(0) toRem(0) toRem(15) toRem(0);
-        @media (max-width: toEm(1200)) {
-            font-size: toRem(22);
+        @media (max-width: toEm(1462)) {
+            font-size: toRem(20);
         }
         @media (max-width: $mobile) {
             margin: toRem(20) toRem(0) toRem(20) toRem(0);
             text-align: center;
+            font-size: toRem(24);
         }
     }
 
@@ -687,6 +720,13 @@
         width: 45px;
         height: 45px;
     }
+    @media (max-width: toEm(640)) {
+        background-color: #ffffff00;
+    }
+    &:active {
+        border: 2px solid #aa5d00;
+        transition: all 0.3s;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -694,13 +734,16 @@
         height: 2px;
         background-color: #ffffff;
         transform: rotate(-45deg);
-        top: 17px;
+        top: 18px;
         left: 12px;
         @media (max-width: toEm(1600)) {
             width: 18px;
             height: 2px;
             left: 11px;
             top: 17px;
+        }
+        @media (max-width: toEm(640)) {
+            background-color: #fa8b02;
         }
     }
     &::after {
@@ -710,7 +753,7 @@
         height: 2px;
         background-color: #ffffff;
         transform: rotate(45deg);
-        top: 30px;
+        top: 31px;
         left: 13px;
         @media (max-width: toEm(1600)) {
             width: 18px;
@@ -718,8 +761,12 @@
             left: 11px;
             top: 27.8px;
         }
+        @media (max-width: toEm(640)) {
+            background-color: #fa8b02;
+        }
     }
 }
+
 .swiper-button-next {
     position: relative;
     width: 50px;
@@ -727,9 +774,16 @@
     background: #fa8b02;
     border-radius: 50%;
     transform: rotate(-180deg);
+    &:active {
+        border: 2px solid #aa5d00;
+        transition: all 0.3s;
+    }
     @media (max-width: toEm(1600)) {
         width: 45px;
         height: 45px;
+    }
+    @media (max-width: toEm(640)) {
+        background-color: #ffffff00;
     }
     &::before {
         content: "";
@@ -745,7 +799,10 @@
             width: 18px;
             height: 2px;
             left: 11px;
-            top: 17px;
+            top: 15px;
+        }
+        @media (max-width: toEm(640)) {
+            background-color: #fa8b02;
         }
     }
     &::after {
@@ -762,12 +819,17 @@
             width: 18px;
             height: 2px;
             left: 11px;
-            top: 27.8px;
+            top: 26.8px;
+        }
+        @media (max-width: toEm(640)) {
+            background-color: #fa8b02;
         }
     }
 }
+
 .block__more {
     position: relative;
+    z-index: 100;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
@@ -775,6 +837,7 @@
     line-height: 25px;
     text-align: center;
     color: #fa8b02;
+    margin: toRem(10) toRem(0) toRem(0) toRem(0);
     &::before {
         content: "";
         position: absolute;
@@ -783,6 +846,165 @@
         top: 25%;
         left: 110%;
         background: url("@img/section-two/Vector.png") 0 0 no-repeat;
+    }
+}
+
+// section-thre
+
+.section-three {
+    margin: toRem(100) toRem(0) toRem(150) toRem(0);
+    @media (max-width: $mobile) {
+        margin: toRem(20) toRem(0) toRem(0) toRem(0);
+        padding: toRem(20) toRem(20) toRem(80) toRem(20);
+    }
+
+    &__row {
+        display: flex;
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+
+    &__image {
+        position: relative;
+        flex: 0 1 410px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 25px;
+            background: url("@img/section-three/1.png") 0 0 no-repeat;
+        }
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    &__box {
+        position: relative;
+        flex: 1 1 100%;
+        padding: 100px 70px 0px 70px;
+        @media (max-width: $tablet) {
+            padding: 100px 40px 0px 40px;
+        }
+        @media (max-width: $mobile) {
+            padding: 0px 0px 0px 0px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: toRem(16);
+        line-height: 22px;
+        color: #333333;
+    }
+
+    &__title {
+        position: relative;
+        font-weight: 800;
+        font-size: toRem(32);
+        line-height: 44px;
+        color: #333333;
+        margin: toRem(0) toRem(40) toRem(20) toRem(0);
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 32px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+    }
+
+    &__box-row {
+        display: flex;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        @media (max-width: $mobile) {
+            flex: 0 1 50%;
+            margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        }
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #fa8b02;
+        margin: toRem(0) toRem(0) toRem(10) toRem(0);
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+
+    &__column-text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #333333;
+        opacity: 0.6;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+}
+
+// section-four
+
+.section-four {
+    margin: toRem(0) toRem(0) toRem(100) toRem(0);
+    @media (max-width: $mobile) {
+        margin: toRem(100) toRem(0) toRem(0) toRem(0);
+    }
+
+    &__row {
+        min-height: toRem(450);
+        background-color: #cba07a;
+    }
+
+    &__text-content {
+        position: relative;
+        z-index: 100;
+        padding: toRem(40) toRem(20) toRem(40) toRem(20);
+        background-color: #af9682;
+        max-width: toRem(570);
+        min-height: toRem(330);
+        border-radius: 15px;
+        transform: translate(0px, 20%);
+    }
+
+    &__tite {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(40) toRem(0);
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+    }
+
+    &__button {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+
+    &__image {
+        display: flex;
+        justify-content: end;
+        transform: translate(0px, -100%);
     }
 }
 
