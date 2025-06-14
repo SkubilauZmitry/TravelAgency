@@ -636,9 +636,10 @@
         letter-spacing: 2px;
         color: #333333;
         margin: toRem(0) toRem(0) toRem(15) toRem(0);
-        @media (max-width: toEm(1462)) {
+        @media (max-width: toEm(1600)) {
             font-size: toRem(20);
         }
+
         @media (max-width: $mobile) {
             margin: toRem(20) toRem(0) toRem(20) toRem(0);
             text-align: center;
