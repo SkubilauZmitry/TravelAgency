@@ -611,6 +611,26 @@
             top: 0;
             left: 0;
             border-radius: 15px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                top: 18px;
+                left: 12;
+                transform: rotate(-45deg);
+                background-color: #000000;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                top: 30px;
+                left: 12;
+                transform: rotate(45deg);
+                background-color: #000000;
+            }
             @media (max-width: toEm(767)) {
                 width: 55%;
                 left: 50%;
