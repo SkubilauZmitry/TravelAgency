@@ -1,0 +1,405 @@
+//========================================================================================================================================================
+// section-one-article
+.section-one-article {
+    padding: toRem(60) toRem(0) toRem(120) toRem(0);
+    @media (max-width: $mobile) {
+        padding: toRem(0) toRem(0) toRem(40) toRem(0);
+    }
+
+    &__row {
+        @media (min-width: $mobile) {
+            display: flex;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        padding: toRem(0) toRem(0) toRem(0) toRem(30);
+        margin: toRem(0) toRem(0) toRem(50) toRem(0);
+        @media (max-width: $mobile) {
+            margin: toRem(25) toRem(0) toRem(25) toRem(0);
+        }
+        & a {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 5px;
+                left: 0;
+                background: url("@img/Lucca-Bike-Tour/section-one-article/Arrow.png") 0 0 no-repeat;
+            }
+        }
+        &:hover {
+            transform: scale(1.02);
+            transition: all 0.1s;
+        }
+    }
+
+    &__left-block {
+        flex: 0 1 50%;
+        margin: toRem(0) toRem(40) toRem(0) toRem(0);
+        @media (max-width: $mobile) {
+            margin: 0px 0px 0px 0px;
+            padding: toRem(0) toRem(80) toRem(0) toRem(80);
+        }
+        @media (max-width: toEm(640)) {
+            padding: toRem(0) toRem(40) toRem(0) toRem(40);
+        }
+    }
+
+    &__left-image {
+        padding: toRem(0) toRem(0) toRem(40) toRem(0);
+        @media (max-width: $mobile) {
+            padding: toRem(0) toRem(0) toRem(20) toRem(0);
+        }
+    }
+
+    &__left-img {
+        max-width: 100%;
+        &:hover {
+            transform: scale(1.02);
+            transition: all 0.1s;
+        }
+    }
+
+    &__left-image-row {
+        display: flex;
+        @media (max-width: $mobile) {
+            margin: toRem(0) auto toRem(40) toRem(0);
+            margin: 0px auto 40px auto;
+        }
+    }
+
+    &__left-image-one {
+        padding: toRem(0) toRem(20) toRem(0) toRem(0);
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.1s;
+        }
+    }
+
+    &__left-image-two {
+        padding: toRem(0) toRem(20) toRem(0) toRem(0);
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.1s;
+        }
+    }
+
+    &__left-image-three {
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.1s;
+        }
+    }
+
+    &__right {
+        flex: 0 1 50%;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 65px;
+        margin: toRem(0) toRem(0) toRem(16) toRem(0);
+    }
+
+    &__price {
+        position: relative;
+        display: flex;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        opacity: 0.8;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        & span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 60px;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 44px;
+            display: flex;
+            align-items: center;
+            color: #fa8b02;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        opacity: 0.6;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+    }
+}
+
+#section-one-article-form-id {
+    max-width: 302px;
+}
+.input-aricle-time {
+    height: 52px;
+    padding: toRem(0) toRem(0) toRem(0) toRem(10);
+    background: #ffffff;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 8px;
+    margin: toRem(10) toRem(0) toRem(20) toRem(0);
+}
+
+.input-aricle-date {
+    height: 52px;
+    padding: toRem(0) toRem(0) toRem(0) toRem(10);
+    background: #ffffff;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 8px;
+    margin: toRem(10) toRem(0) toRem(20) toRem(0);
+}
+.section-one-article-button {
+    min-width: 100%;
+}
+
+// section-two-article
+.section-two-article {
+    padding: toRem(0) toRem(0) toRem(86) toRem(0);
+    @media (max-width: $mobile) {
+        padding: toRem(0) toRem(0) toRem(40) toRem(0);
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 26px;
+        margin: toRem(0) toRem(0) toRem(32) toRem(0);
+    }
+
+    &__text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        margin: toRem(0) toRem(0) toRem(37) toRem(0);
+    }
+
+    &__box-text {
+    }
+
+    &__text-one {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon1.png") 0 0 no-repeat;
+        }
+    }
+    &__text-two {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon2.png") 0 0 no-repeat;
+        }
+    }
+    &__text-three {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon3.png") 0 0 no-repeat;
+        }
+    }
+    &__text-four {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon4.png") 0 0 no-repeat;
+        }
+    }
+    &__text-five {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon5.png") 0 0 no-repeat;
+        }
+    }
+    &__text-six {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon6.png") 0 0 no-repeat;
+        }
+    }
+    &__text-seven {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        padding: toRem(0) toRem(0) toRem(0) toRem(40);
+        & span {
+            font-weight: 400;
+            color: #333333ec;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("@img/Lucca-Bike-Tour/section-two-article/icon7.png") 0 0 no-repeat;
+        }
+    }
+}
+
+// section-thee-article
+.section-three-article {
+    @media (max-width: $mobile) {
+        padding: toRem(0) toRem(0) toRem(0) toRem(0);
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 26px;
+        margin: toRem(0) toRem(0) toRem(72) toRem(0);
+        @media (max-width: toEm(1600)) {
+            margin: toRem(0) toRem(0) toRem(35) toRem(0);
+        }
+    }
+
+    &__gallery {
+        @media (max-width: toEm(1200)) {
+            display: flex;
+            justify-content: center;
+            background-color: #cdecf554;
+            padding: toRem(50);
+            border-radius: 25px;
+        }
+        @media (max-width: $mobile) {
+            background-color: #ffffff;
+            padding: toRem(0) toRem(0) toRem(0) toRem(0);
+            border-radius: 0;
+        }
+    }
+}
+.gallery {
+    &__preview {
+        max-width: 100%;
+    }
+}
+.section-three-article-row {
+    display: flex;
+    max-width: 100%;
+}
+.section-three-article-row-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: toRem(0) toRem(20) toRem(0) toRem(20);
+    @media (max-width: toEm(1220)) {
+        // display: none;
+    }
+}
+.section-three-article-row-three {
+    display: flex;
+    @media (max-width: toEm(1220)) {
+        display: none;
+    }
+}
+
+//========================================================================================================================================================

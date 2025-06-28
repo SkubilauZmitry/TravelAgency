@@ -1,3 +1,153 @@
 //====================================================================================================
+.footer {
+    padding: toRem(40) toRem(20) toRem(40) toRem(20);
+    background-color: #333333;
+    &__container {
+    }
+
+    &__image {
+        margin: toRem(0) toRem(0) toRem(65) toRem(0);
+        @media (max-width: toEm(1500)) {
+            margin: toRem(0) toRem(0) toRem(0) toRem(0);
+        }
+    }
+
+    &__line {
+        margin: toRem(0) toRem(0) toRem(33) toRem(0);
+        &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            opacity: 0.1;
+        }
+    }
+
+    &__row {
+        display: flex;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        flex: 0 1 20%;
+        padding: toRem(0) toRem(0) toRem(0) toRem(70);
+        &:first-child {
+            padding: toRem(0) toRem(0) toRem(0) toRem(0);
+        }
+        @media (max-width: toEm(1500)) {
+            flex: 0 1 25%;
+        }
+        &_one-- {
+            padding: toRem(0) toRem(0) toRem(0) toRem(0);
+            @media (max-width: toEm(2100)) {
+                margin: toRem(20) toRem(0) toRem(20) toRem(0);
+            }
+            @media (max-width: toEm(550)) {
+                padding: toRem(0) toRem(0) toRem(0) toRem(0);
+            }
+        }
+        @media (max-width: $mobile) {
+            flex: 0 1 50%;
+            padding: toRem(50) toRem(0) toRem(50) toRem(0);
+            &_three-- {
+                padding: toRem(50) toRem(0) toRem(50) toRem(50);
+            }
+            &_five-- {
+                padding: toRem(50) toRem(0) toRem(50) toRem(50);
+            }
+        }
+        @media (max-width: toEm(550)) {
+            &_two-- {
+                flex: 1 1 100%;
+                padding: toRem(0) toRem(0) toRem(0) toRem(0);
+            }
+            &_three-- {
+                padding: toRem(50) toRem(0) toRem(50) toRem(0);
+            }
+            &_four-- {
+                padding: toRem(50) toRem(0) toRem(50) toRem(50);
+            }
+            &_five-- {
+                padding: toRem(0) toRem(0) toRem(50) toRem(0);
+            }
+        }
+    }
+
+    &__column-title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: toRem(20);
+        line-height: 30px;
+        color: #ffffff;
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        &_one-- {
+            text-align: center;
+            @media (max-width: toEm(1500)) {
+                display: none;
+            }
+        }
+    }
+
+    &__column-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+        padding: toRem(0) toRem(0) toRem(20) toRem(0);
+        &:last-child {
+            padding: toRem(0) toRem(0) toRem(0) toRem(0);
+        }
+    }
+
+    &__map {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffffff;
+        padding: toRem(0) toRem(0) toRem(20) toRem(0);
+    }
+
+    &__tel {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffffff;
+        padding: toRem(0) toRem(0) toRem(20) toRem(0);
+    }
+
+    &__mail {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffffff;
+    }
+
+    &__column-row-icon {
+        text-align: center;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #ffffff;
+        @media (max-width: toEm(1500)) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media (max-width: toEm(1550)) {
+            flex-direction: column;
+        }
+    }
+    &__link {
+        order: 3;
+    }
+}
 
 //====================================================================================================

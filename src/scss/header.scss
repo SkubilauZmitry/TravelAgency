@@ -17,6 +17,12 @@
         position: relative;
         width: 9.173%;
         padding: 0px 0px 7.7245% 0px;
+        &_page {
+            @media (max-width: toEm(1180)) {
+                flex: 0 1 12%;
+                padding: 0px 0px 8.5% 0px;
+            }
+        }
         & img {
             position: absolute;
             width: 100%;
@@ -63,7 +69,7 @@
         }
         @media (min-width: toEm(1150)) {
             flex: 1 0 50%;
-            padding: toRem(0) toRem(0) toRem(0) toRem(120);
+            padding: toRem(0) toRem(0) toRem(0) toRem(20);
         }
     }
 
@@ -90,12 +96,14 @@
         text-align: center;
         color: #ffffff;
         cursor: default;
+
         @media (max-width: toEm(1150)) {
             font-size: toRem(18);
         }
         @media (max-width: toEm(767)) {
             &:active {
                 color: #bababa;
+
                 transition: all 0.3s 0s;
             }
         }
@@ -125,8 +133,6 @@
             &:hover {
                 padding: toRem(5) toRem(40) toRem(5) toRem(40);
                 background-color: #fa8b02;
-                border-radius: 20px;
-                transition: all 0.3s;
             }
         }
         @media (max-width: toEm(767)) {
@@ -140,6 +146,9 @@
         @media (max-width: $mobileSmall) {
             padding: toRem(0) toRem(20) toRem(0) toRem(0);
         }
+        &_black-- {
+            color: #000000;
+        }
     }
 
     &__sign-up {
@@ -150,6 +159,9 @@
         color: #ffffff;
         padding: toRem(5) toRem(40) toRem(5) toRem(40);
         border-radius: 20px;
+        &_black-- {
+            color: #000000;
+        }
         @media (max-width: toEm(1150)) {
             font-size: toRem(18);
         }
@@ -177,12 +189,24 @@
 }
 .menu {
     &__icon {
+        &_black-- {
+            span,
+            &::before,
+            &::after {
+                content: "";
+                background-color: #000000;
+            }
+        }
     }
 
     &__body {
         @media (max-width: toEm(767)) {
-            padding: toRem(100) toRem(10) toRem(0) toRem(10);
-            background-color: #fa8a02;
+            padding: toRem(60) toRem(10) toRem(0) toRem(10);
+            background-color: #fa8a02d2;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            transition: all 0.3s;
         }
         @media (max-width: $mobile) {
             padding: toRem(50) toRem(0) toRem(0) toRem(0);
@@ -195,12 +219,15 @@
         @media (min-width: toEm(767)) {
             display: flex;
         }
+        @media (max-width: $mobile) {
+            &:last-child {
+                margin: 0px 0px 0px 0px;
+                padding: toRem(20) toRem(0) toRem(0) toRem(0);
+            }
+        }
     }
 
     &__item {
-        &:last-child {
-            margin: 0px 0px 0px 0px;
-        }
     }
 
     &__link {
@@ -210,25 +237,37 @@
         color: #ffffff;
         margin: toRem(0) toRem(47) toRem(0) toRem(0);
         border-bottom: 2px solid #fa8a0200;
+        &_act {
+            @media (min-width: $mobile) {
+                border-bottom: 2px solid #fa8b02;
+            }
+        }
         &_lc {
             margin: 0px 0px 0px 0px;
         }
+        &_black-act {
+            color: #000000;
+            @media (min-width: $mobile) {
+                border-bottom: 2px solid #fa8b02;
+            }
+        }
+        &_black {
+            color: #000000;
+        }
 
         &:hover {
-            border-bottom: 2px solid #fa8b02;
-        }
-        @media (max-width: toEm(767)) {
-            margin: toRem(0) toRem(0) toRem(80) toRem(0);
-            font-size: toRem(52);
-            &:active {
-                color: #bababa;
-                transition: all 0.3s 0s;
+            @media (min-width: $mobile) {
+                border-bottom: 2px solid #fa8b02;
             }
         }
 
         @media (max-width: toEm(767)) {
             margin: toRem(0) toRem(0) toRem(40) toRem(0);
             font-size: toRem(52);
+            &:active {
+                color: #bababa;
+                transition: all 0.3s 0s;
+            }
         }
         @media (max-width: $mobileSmall) {
             font-size: toRem(32);
@@ -256,6 +295,9 @@
             @media (max-width: $mobile) {
                 margin: 0px 0px -30px 0px;
             }
+        }
+        &_black-- {
+            color: #333333a4;
         }
     }
 }
