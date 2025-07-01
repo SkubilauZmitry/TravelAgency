@@ -1,7 +1,7 @@
 //========================================================================================================================================================
 // section-one-article
 .section-one-article {
-    padding: toRem(60) toRem(0) toRem(120) toRem(0);
+    padding: toRem(0) toRem(0) toRem(120) toRem(0);
     @media (max-width: $mobile) {
         padding: toRem(0) toRem(0) toRem(40) toRem(0);
     }

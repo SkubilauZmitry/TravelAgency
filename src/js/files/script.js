@@ -25,6 +25,76 @@ document.addEventListener("keyup", function (event) {
     };
 });
 
+// login
+const loginFormBtn = document.querySelector(".header__login-form-btn");
+const loginButton = document.querySelector(".header__login-button");
+const headerLoginBlock = document.querySelector(".header__login-block");
+const inputPasswordLoginFormTextTwo = document.querySelector(".input-password-login-form__text-two");
+loginButton.addEventListener("click", function (event) {
+    headerLoginBlock.classList.toggle("active-three");
+});
+loginFormBtn.addEventListener("click", function (event) {
+    headerLoginBlock.classList.remove("active-three");
+});
+
+inputPasswordLoginFormTextTwo.addEventListener("click", function (event) {
+    headerSignUpBlock.classList.add("active-three");
+    headerLoginBlock.classList.remove("active-three");
+});
+
+
+
+// forgot-password
+const inputPasswordLoginFormText = document.querySelector(".input-password-login-form__text");
+const headerForgotPasswordBlock = document.querySelector(".header__forgot-password-block");
+const headerCheckYourEmailBlock = document.querySelector(".header__check-your-email-block");
+const inputForgotPasswordFormButton = document.querySelector(".input-forgot-password-form-button");
+const inputForgotPasswordFormTextTwo = document.querySelector(".input-forgot-password-form__text-two");
+inputPasswordLoginFormText.addEventListener("click", function (event) {
+    headerLoginBlock.classList.remove("active-three");
+    headerForgotPasswordBlock.classList.add("active-three");
+
+});
+loginFormBtn.addEventListener("click", function (event) {
+    headerLoginBlock.classList.remove("active-three");
+});
+inputForgotPasswordFormTextTwo.addEventListener("click", function (event) {
+    headerLoginBlock.classList.add("active-three");
+    headerForgotPasswordBlock.classList.remove("active-three");
+});
+inputForgotPasswordFormButton.addEventListener("click", function (event) {
+    headerCheckYourEmailBlock.classList.add("active-three");
+    headerForgotPasswordBlock.classList.remove("active-three");
+});
+
+// check-your-email
+const inputCheckYourEmailFormTextOne = document.querySelector(".input-check-your-email-form__text-one");
+const inputCheckYourEmailFormTextTwo = document.querySelector(".input-check-your-email-form__text-two");
+inputCheckYourEmailFormTextTwo.addEventListener("click", function (event) {
+    headerCheckYourEmailBlock.classList.remove("active-three");
+    headerLoginBlock.classList.add("active-three");
+});
+inputCheckYourEmailFormTextOne.addEventListener("click", function (event) {
+    headerCheckYourEmailBlock.classList.remove("active-three");
+    headerForgotPasswordBlock.classList.add("active-three");
+});
+
+/// sign-up
+const headerSignUpButton = document.querySelector(".header__sign-up-button");
+const headerSignUpBlock = document.querySelector(".header__sign-up-block");
+const inputSignUpFormTextTwo = document.querySelector(".input-password-sign-up-form__text-two");
+const signUFormpBtn = document.querySelector(".header__sign-up-form-btn");
+inputSignUpFormTextTwo.addEventListener("click", function (event) {
+    headerSignUpBlock.classList.remove("active-three");
+    headerLoginBlock.classList.add("active-three");
+});
+headerSignUpButton.addEventListener("click", function (event) {
+    headerSignUpBlock.classList.toggle("active-three");
+});
+signUFormpBtn.addEventListener("click", function (event) {
+    headerSignUpBlock.classList.remove("active-three");
+});
+
 
 
 

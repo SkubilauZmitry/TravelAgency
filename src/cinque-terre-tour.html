@@ -25,7 +25,9 @@
                     </a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_black">About Us</a>
+                    <a href="about-us.html" class="menu__link menu__link_black"
+                      >About Us</a
+                    >
                   </li>
                   <li class="menu__item">
                     <a
@@ -66,11 +68,243 @@
                   </ul>
                 </ul>
               </div>
+              <!-- login -->
               <div class="header__login header__login_black--">
-                <a href="#">Login</a>
+                <button
+                  type="button"
+                  class="header__login-button header__login-button_black"
+                >
+                  Login
+                </button>
+                <div class="header__login-block">
+                  <div class="header__login-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="login-form-id"
+                    >
+                      <h5 class="header__login-form-title">Login</h5>
+                      <button type="button" class="header__login-form-btn">
+                        <span></span>
+                      </button>
+                      <label for="input-email-login-form-id">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="form[email]"
+                        data-error="Error"
+                        placeholder="Enter your email address"
+                        class="input-email-login-form input"
+                        id="input-email-login-form-id"
+                      />
+                      <label for="input-password-form-id">Password</label>
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-login-form input"
+                        id="input-password-login-form-id"
+                      />
+                      <div class="input-password-login-form__text">
+                        Forgot your password?
+                      </div>
+
+                      <button type="submit" class="input-login-form-button btn">
+                        Sign In
+                      </button>
+                      <div
+                        class="input-password-login-form__text input-password-login-form__text_two"
+                      >
+                        or
+                      </div>
+                      <button type="button" class="input-login-form-button-btn">
+                        Sign In with Google
+                      </button>
+                      <div class="input-password-login-form__text-two">
+                        Don’t have an account ?
+                        <span> Sign Up </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__forgot-password-block">
+                  <div class="header__forgot-password-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="forgot-password-form-id"
+                    >
+                      <div class="header__forgot-password-image">
+                        <img src="@img/header/key.png" alt="Image" />
+                      </div>
+
+                      <h5 class="header__forgot-password-title">
+                        Forgot Password
+                      </h5>
+                      <div class="input-forgot-password-form__text">
+                        <a href=""
+                          >No worries, we'll send you reset instructions.</a
+                        >
+                      </div>
+                      <label for="input-email-forgot-password-form-id">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="form[email]"
+                        data-error="Error"
+                        placeholder="Enter your email address"
+                        class="input-email-forgot-password-form input"
+                        id="input-email-forgot-password-form-id"
+                      />
+                      <button
+                        type="button"
+                        class="input-forgot-password-form-button"
+                      >
+                        Reset Password
+                      </button>
+                      <div class="input-forgot-password-form__text-two">
+                        Back to Login
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__check-your-email-block">
+                  <div class="check-your-email-form">
+                    <div class="header__check-your-email-form">
+                      <form
+                        action="files/sendmail/sendmail.php"
+                        method="POST"
+                        id="check-your-email-form-id"
+                      >
+                        <div class="header__check-your-email-image">
+                          <img src="@img/header/email.png" alt="Image" />
+                        </div>
+
+                        <h5 class="header__check-your-email-title">
+                          Check your email
+                        </h5>
+                        <div class="input-check-your-email-form__text">
+                          <a href=""
+                            >We sent a password reset link to
+                            <br />loremipsum@gmail.com</a
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          class="input-check-your-email-form-button"
+                        >
+                          Open email app
+                        </button>
+                        <div class="input-check-your-email-form__text-one">
+                          Didn't receive the email?
+                          <span> Click to resend </span>
+                        </div>
+                        <div class="input-check-your-email-form__text-two">
+                          Back to Login
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- sign-up -->
               <div class="header__sign-up header__sign-up_black--">
-                <a href="#">Sign Up</a>
+                <button
+                  type="button"
+                  class="header__sign-up-button header__sign-up-button_black--"
+                >
+                  Sign Up
+                </button>
+                <div class="header__sign-up-block">
+                  <div class="header__sign-up-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="sign-up-form-id"
+                    >
+                      <h5 class="header__sign-up-form-title">Create Account</h5>
+                      <button type="button" class="header__sign-up-form-btn">
+                        <span></span>
+                      </button>
+                      <label for="input-name-sign-up-form-id"
+                        >Name and Surname</label
+                      >
+                      <input
+                        type="text"
+                        name="form[name]"
+                        data-error="Error"
+                        placeholder="Enter your name and surname"
+                        class="input-name-sign-up-form input"
+                        id="input-name-sign-up-form-id"
+                      />
+                      <label for="input-email-sign-up-form-id">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="form[email]"
+                        data-error="Error"
+                        placeholder="Enter your email address"
+                        class="input-email-sign-up-form input"
+                        id="input-email-sign-up-form-id"
+                      />
+                      <label for="input-password-sign-up-form-id"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-login-form input"
+                        id="input-password-sign-up-form-id"
+                      />
+                      <div class="input-check-sign-up-form__check">
+                        <div class="checkbox">
+                          <input
+                            id="c_1"
+                            data-error="Помилка"
+                            class="checkbox__input"
+                            type="checkbox"
+                            value="1"
+                            name="form[check]"
+                          />
+                          <label for="c_1" class="checkbox__label"
+                            ><span class="checkbox__text"
+                              >I agree with <span>Terms</span> and
+                              <span>Privacy</span>
+                            </span></label
+                          >
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="input-sign-up-form-button btn"
+                      >
+                        Sign In
+                      </button>
+                      <div
+                        class="input-password-sign-up-form__text input-password-sign-up-form__text_two"
+                      >
+                        or
+                      </div>
+                      <button
+                        type="button"
+                        class="input-sign-up-form-button-btn"
+                      >
+                        Sign In with Google
+                      </button>
+                      <div class="input-password-sign-up-form__text-two">
+                        Already have an account?
+                        <span> Log In </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -82,7 +316,7 @@
         <section class="section-one-article">
           <div class="section-one-article__container">
             <button type="button" class="section-one-article__btn">
-              <a href="home.html">Back</a>
+              <a href="tour-packages.html">Back</a>
             </button>
             <article class="section-one-article__row">
               <div class="section-one-article__left-block">

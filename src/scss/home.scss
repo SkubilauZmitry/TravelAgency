@@ -1,7 +1,7 @@
 //====================================================================================================
 .btn {
     font-weight: 600;
-    font-size: 20px;
+    font-size: toRem(20);
     line-height: 27px;
     text-align: center;
     color: #ffffff;
@@ -849,6 +849,7 @@
     &__image {
         position: relative;
         flex: 0 1 410px;
+
         &::after {
             content: "";
             position: absolute;
@@ -858,6 +859,17 @@
             left: 25px;
             background: url("@img/section-three/1.png") 0 0 no-repeat;
         }
+        &_abus {
+            @media (max-width: toEm(1020)) {
+                & img {
+                    max-width: 90%;
+                }
+            }
+            &::after {
+                content: "";
+                display: none;
+            }
+        }
         @media (max-width: $mobile) {
             display: none;
         }
@@ -866,12 +878,21 @@
     &__box {
         position: relative;
         flex: 1 1 100%;
-        padding: 100px 70px 0px 70px;
+        padding: toRem(100) toRem(70) toRem(0) toRem(70);
         @media (max-width: $tablet) {
-            padding: 100px 40px 0px 40px;
+            padding: toRem(100) toRem(40) toRem(0) toRem(40);
         }
         @media (max-width: $mobile) {
-            padding: 0px 0px 0px 0px;
+            padding: toRem(0) toRem(0) toRem(0) toRem(0);
+        }
+        &_abus {
+            padding: toRem(100) toRem(30) toRem(0) toRem(30);
+            @media (max-width: toEm(1240)) {
+                padding: toRem(20) toRem(0) toRem(0) toRem(0);
+            }
+            @media (max-width: toEm(1000)) {
+                padding: toRem(10) toRem(0) toRem(0) toRem(0);
+            }
         }
     }
 
@@ -1123,6 +1144,7 @@
 }
 
 // section-seven
+
 .section-seven {
     padding: toRem(150) toRem(0) toRem(50) toRem(0);
     @media (max-width: $mobile) {

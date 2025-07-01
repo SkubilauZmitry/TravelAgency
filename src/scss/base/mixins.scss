@@ -147,7 +147,12 @@ $responsiveType: 1;
 }
 
 // Grid-контейнер
-@mixin gridContainer($type: 0, $container: $maxWidthContainer, $paddingStart: math.div($containerPadding, 2), $paddingEnd: math.div($containerPadding, 2)) {
+@mixin gridContainer(
+	$type: 0,
+	$container: $maxWidthContainer,
+	$paddingStart: math.div($containerPadding, 2),
+	$paddingEnd: math.div($containerPadding, 2)
+) {
 	display: grid;
 	min-width: 0;
 	grid-template-columns: toRem($paddingStart) 1fr minmax(auto, toRem($container)) 1fr toRem($paddingEnd);
