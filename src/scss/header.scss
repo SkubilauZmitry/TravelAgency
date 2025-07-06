@@ -898,6 +898,253 @@
     }
 }
 
+// password-reset
+.header {
+    &__password-reset-block {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #433e3daa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    &__password-reset-form {
+        padding: toRem(40) toRem(60) toRem(40) toRem(60);
+        max-width: 488px;
+        background-color: #fff;
+        border-radius: 15px;
+        & label {
+            display: block;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: #333333;
+            opacity: 0.6;
+            text-align: left;
+            margin: toRem(0) toRem(0) toRem(10) toRem(0);
+        }
+        @media (max-width: $mobile) {
+            padding: toRem(40) toRem(20) toRem(40) toRem(20);
+        }
+    }
+
+    &__password-reset-image {
+        position: relative;
+        & img {
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    &__password-reset-title {
+        display: block;
+        font-weight: 700;
+        @include adaptiveValue("font-size", 32, 30);
+        line-height: 44px;
+        color: #333333;
+        text-align: center;
+
+        margin: toRem(14) toRem(0) toRem(24) toRem(0);
+        @media (max-width: $mobile) {
+            line-height: 40px;
+        }
+    }
+}
+#input-email-password-reset-form-id {
+    max-width: 100%;
+    padding: toRem(14) toRem(24) toRem(14) toRem(24);
+    margin: toRem(0) toRem(0) toRem(34) toRem(0);
+}
+
+.input-password-reset-form {
+    &__text {
+        color: #333333;
+        margin: toRem(0) toRem(0) toRem(24) toRem(0);
+        font-size: toRem(16);
+        @include adaptiveValue("font-size", 16, 14);
+        line-height: 22px;
+        text-align: center;
+    }
+    &_two {
+        text-align: center;
+        margin: toRem(0) toRem(0) toRem(8) toRem(0);
+    }
+
+    &__text-one {
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #33333399;
+        cursor: pointer;
+        & span {
+            color: #fa8b02;
+        }
+    }
+
+    &__text-two {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #33333399;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 5.5px;
+            left: 65px;
+            background: url("@img/header/arrow.png") 0 0 no-repeat;
+        }
+    }
+}
+.input-password-reset-form-button {
+    width: 100%;
+    margin: toRem(0) toRem(0) toRem(24) toRem(0);
+    font-weight: 600;
+    font-size: toRem(20);
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    padding: toRem(10);
+    background: #fa8b02;
+    border-radius: 50px;
+    &:active {
+        border: 2px solid #8f5003;
+        transition: all 0.3s;
+    }
+    @media (min-width: $mobile) {
+        &:hover {
+            color: #dddddd;
+            transition: all 0.1s;
+        }
+    }
+}
+
+// login
+.header {
+    &__set-new-password-block {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #433e3daa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    &__set-new-password-form {
+        padding: toRem(40) toRem(60) toRem(40) toRem(60);
+        max-width: 488px;
+        background-color: #fff;
+        border-radius: 15px;
+        & label {
+            display: block;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: #333333;
+            opacity: 0.6;
+            text-align: left;
+            margin: toRem(0) toRem(0) toRem(10) toRem(0);
+        }
+        @media (max-width: $mobile) {
+            padding: toRem(40) toRem(20) toRem(40) toRem(20);
+        }
+    }
+
+    &__set-new-password-form-title {
+        display: block;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        color: #333333;
+        text-align: center;
+        padding: toRem(0) toRem(24) toRem(0) toRem(0);
+        margin: toRem(0) toRem(0) toRem(24) toRem(0);
+    }
+    &__set-new-password-image {
+        display: flex;
+        justify-content: center;
+        margin: toRem(0) toRem(0) toRem(24) toRem(0);
+    }
+}
+#input-set-new-password-form-id {
+    max-width: 100%;
+    padding: toRem(14) toRem(24) toRem(14) toRem(24);
+    margin: toRem(0) toRem(0) toRem(34) toRem(0);
+}
+
+#input-password-set-new-password-form-cf-id {
+    max-width: 100%;
+    padding: toRem(14) toRem(24) toRem(14) toRem(24);
+    margin: toRem(0) toRem(0) toRem(20) toRem(0);
+}
+
+.input-set-new-password-form {
+    &__text {
+        position: relative;
+        z-index: 900;
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        text-align: center;
+        margin: toRem(0) toRem(0) toRem(24) toRem(0);
+        &_two {
+            text-align: center;
+            margin: toRem(0) toRem(0) toRem(8) toRem(0);
+        }
+    }
+
+    &__text-two {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #33333399;
+        cursor: pointer;
+        & span {
+            color: #fa8b02;
+        }
+    }
+    &__text-two {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #33333399;
+        cursor: pointer;
+        text-align: center;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 5.5px;
+            left: 115px;
+            background: url("@img/header/arrow.png") 0 0 no-repeat;
+        }
+    }
+}
+.input-set-new-password-form-button {
+    width: 100%;
+    margin: toRem(0) toRem(0) toRem(24) toRem(0);
+}
+
 .active {
     display: block;
 }

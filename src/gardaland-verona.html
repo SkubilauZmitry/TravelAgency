@@ -25,20 +25,20 @@
                     </a>
                   </li>
                   <li class="menu__item">
-                    <a href="about-us.html" class="menu__link menu__link_black"
+                    <a href="#" class="menu__link menu menu__link_black-act"
                       >About Us</a
                     >
                   </li>
                   <li class="menu__item">
                     <a
                       href="tour-packages.html"
-                      class="menu__link menu__link_black-act"
+                      class="menu__link menu__link_black"
                       >Tour Packages</a
                     >
                   </li>
                   <li class="menu__item">
                     <a
-                      href="#"
+                      href="contact-us.html"
                       class="menu__link menu__link_lc menu__link_black"
                       >Contact Us</a
                     >
@@ -209,8 +209,93 @@
                     </div>
                   </div>
                 </div>
+                <div class="header__set-new-password-block">
+                  <div class="header__set-new-password-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="login-form-np-id"
+                    >
+                      <div class="header__set-new-password-image">
+                        <img src="@img/header/key.png" alt="Image" />
+                      </div>
+                      <h5 class="header__set-new-password-form-title">
+                        Set New Password
+                      </h5>
+                      <div class="input-set-new-password-form__text">
+                        Your new password must be different from previously used
+                        passwords.
+                      </div>
+                      <label for="input-set-new-password-form-id"
+                        >New Password</label
+                      >
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-login-form input"
+                        id="input-set-new-password-form-id"
+                      />
+                      <label for="input-password-set-new-password-form-cf-id"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-set-new-password-form input"
+                        id="input-password-set-new-password-form-cf-id"
+                      />
+                      <button
+                        type="button"
+                        class="input-set-new-password-form-button btn"
+                      >
+                        Reset Password
+                      </button>
+                      <div class="input-set-new-password-form__text-two">
+                        Back to Login
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__password-reset-block">
+                  <div class="password-reset-form">
+                    <div class="header__password-reset-form">
+                      <form
+                        action="files/sendmail/sendmail.php"
+                        method="POST"
+                        id="password-reset-form-id"
+                      >
+                        <div class="header__password-reset-image">
+                          <img src="@img/header/check.png" alt="Image" />
+                        </div>
+
+                        <h5 class="header__password-reset-title">
+                          Password Reset
+                        </h5>
+                        <div class="input-password-reset-form__text">
+                          <a href=""
+                            >Your password has been successfully reset. Click
+                            below to login in magically.</a
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          class="input-password-reset-form-button"
+                        >
+                          Continue
+                        </button>
+                        <div class="input-password-reset-form__text-two">
+                          Back to Login
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- sing-up -->
+              <!-- sign-up -->
               <div class="header__sign-up header__sign-up_black--">
                 <button
                   type="button"

@@ -42,8 +42,6 @@ inputPasswordLoginFormTextTwo.addEventListener("click", function (event) {
     headerLoginBlock.classList.remove("active-three");
 });
 
-
-
 // forgot-password
 const inputPasswordLoginFormText = document.querySelector(".input-password-login-form__text");
 const headerForgotPasswordBlock = document.querySelector(".header__forgot-password-block");
@@ -76,7 +74,23 @@ inputCheckYourEmailFormTextTwo.addEventListener("click", function (event) {
 });
 inputCheckYourEmailFormTextOne.addEventListener("click", function (event) {
     headerCheckYourEmailBlock.classList.remove("active-three");
-    headerForgotPasswordBlock.classList.add("active-three");
+    headerSetNewPasswordBlock.classList.add("active-three");
+});
+
+// set-new-password
+const inputSetNewPasswordFormTextTwo = document.querySelector(".input-set-new-password-form__text-two");
+const headerSetNewPasswordBlock = document.querySelector(".header__set-new-password-block");
+inputSetNewPasswordFormTextTwo.addEventListener("click", function (event) {
+    headerLoginBlock.classList.add("active-three");
+    headerSetNewPasswordBlock.classList.remove("active-three");
+})
+
+// reset-password
+const inputSetNewPasswordFormButton = document.querySelector(".input-set-new-password-form-button");
+const headerPasswordResetBlock = document.querySelector(".header__password-reset-block");
+inputSetNewPasswordFormButton.addEventListener("click", function (event) {
+    headerPasswordResetBlock.classList.add("active-three");
+    headerSetNewPasswordBlock.classList.remove("active-three");
 });
 
 /// sign-up
@@ -94,6 +108,12 @@ headerSignUpButton.addEventListener("click", function (event) {
 signUFormpBtn.addEventListener("click", function (event) {
     headerSignUpBlock.classList.remove("active-three");
 });
+
+
+
+
+
+
 
 
 
