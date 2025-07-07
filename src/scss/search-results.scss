@@ -1,39 +1,105 @@
 //========================================================================================================================================================
 .section-one-sr {
+    &__container {
+        @media (max-width: $mobile) {
+            width: 70%;
+            margin: 0px auto;
+        }
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: toRem(32);
+        line-height: 44px;
+    }
     &__row {
         display: flex;
+        justify-content: space-between;
+        padding: toRem(30) toRem(0) toRem(30) toRem(0);
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__block-left {
+        flex: 0 1 30%;
     }
 
     &__image {
+        position: relative;
+        width: 88.544%;
+        padding: 0px 0px 69.011% 0px;
+
+        & img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        @media (max-width: $mobile) {
+            position: relative;
+            width: 100%;
+            padding: 0px 0px 79.011% 0px;
+            margin: 0px auto 20px auto;
+        }
+        @media (max-width: $mobile) {
+            position: relative;
+            width: 80%;
+            padding: 0px 0px 55.011% 0px;
+            margin: 0px auto 20px auto;
+        }
     }
 
     &__block-right {
+        flex: 0 1 70%;
         padding: toRem(0) toRem(0) toRem(0) toRem(17);
+        @media (max-width: toEm(1300)) {
+            flex: 1 1 100%;
+        }
     }
 
     &__block-right-title {
         font-weight: 700;
         font-size: 32px;
         line-height: 44px;
-        padding: toRem(0) toRem(0) toRem(30) toRem(0);
+        margin: toRem(0) toRem(0) toRem(30) toRem(0);
     }
 
     &__block-right-row {
         display: flex;
+        @media (max-width: toEm(1300)) {
+            flex-direction: column;
+        }
     }
 
     &__column {
-        flex: 0 1 37.5%;
+        flex: 0 1 50%;
         padding: toRem(0) toRem(20) toRem(0) toRem(0);
-        &_three {
-            flex: 0 1 25%;
-            padding: toRem(0) toRem(0) toRem(0) toRem(0);
+    }
+    &__block-column-one {
+        display: flex;
+        flex: 0 1 75%;
+        @media (max-width: toEm(1300)) {
+            flex: 1 1 100%;
         }
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+    &__block-column-two {
+        flex: 0 1 25%;
+        padding: toRem(0) toRem(0) toRem(0) toRem(0);
     }
 
     &__column-text-one {
         position: relative;
         font-size: toRem(18);
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -55,7 +121,7 @@
 
     &__column-text-two {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -77,7 +143,7 @@
 
     &__column-text-three {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -99,7 +165,7 @@
 
     &__column-text-four {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -121,7 +187,7 @@
 
     &__column-text-five {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -143,7 +209,7 @@
 
     &__column-text-six {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -165,7 +231,7 @@
 
     &__column-text-seven {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -187,7 +253,7 @@
 
     &__column-text-eight {
         position: relative;
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -214,15 +280,31 @@
         font-weight: 600;
         text-align: center;
         margin: toRem(0) toRem(0) toRem(30) toRem(0);
+        @media (max-width: toEm(1600)) {
+            margin: toRem(10) toRem(0) toRem(10) toRem(0);
+        }
         & span {
             font-weight: 400;
             opacity: 0.8;
+        }
+        @media (max-width: $mobile) {
+            text-align: left;
+            margin: toRem(0) toRem(0) toRem(20) toRem(0);
         }
     }
 
     &__column-button-one {
         width: 100%;
         margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        @media (max-width: toEm(1300)) {
+            width: 50%;
+            display: block;
+            margin: 0px auto 20px auto;
+            min-width: 200px;
+        }
+        @media (max-width: $mobile) {
+            margin: toRem(0) toRem(0) toRem(20) toRem(0);
+        }
     }
 
     &__column-button-two {
@@ -231,10 +313,16 @@
         background-color: #fff;
         color: #fa8b02;
         padding: toRem(10) toRem(0) toRem(10) toRem(0);
+        @media (max-width: toEm(1300)) {
+            width: 50%;
+            display: block;
+            margin: 0px auto;
+            min-width: 200px;
+        }
+        @media (max-width: $mobile) {
+            margin: toRem(0) toRem(0) toRem(0) toRem(0);
+        }
     }
 }
-.btn {
-    &_transparent {
-    }
-}
+
 //========================================================================================================================================================
