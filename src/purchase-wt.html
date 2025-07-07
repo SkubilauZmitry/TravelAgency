@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"Search results" })
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__row">
+            <div class="header__logo header__logo_page">
+              <a href="#"><img src="@img/header/logo.png" alt="Image" /></a>
+            </div>
+            <div data-da=".header__row, 768,3" class="header__menu menu">
+              <button
+                type="button"
+                class="menu__icon menu__icon_black-- icon-menu"
+              >
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="home.html" class="menu__link menu__link_black"
+                      >Home
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link menu menu__link_black-act"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="tour-packages.html"
+                      class="menu__link menu__link_black"
+                      >Tour Packages</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="contact-us.html"
+                      class="menu__link menu__link_lc menu__link_black"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div data-da=".menu__body, 1150,0" class="header__block">
+              <div data-da=".header__block, 1150,3" class="header__language">
+                <ul class="header__lang-eng header__lang">
+                  <li
+                    class="header__lang-link header__lang-link_en-- header__lang-link_black--"
+                  >
+                    <a href="#">Eng</a>
+                    <img
+                      class="header__language-image"
+                      src="@img/Lucca-Bike-Tour/header/icon1.png"
+                      alt="Image"
+                    />
+                  </li>
+                  <ul class="header__lang-by">
+                    <li
+                      class="header__lang-link header__lang-link_by-- header__lang-link_black--"
+                    >
+                      <a href="#">Бел</a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <!-- login -->
+              <div class="header__login header__login_black--">
+                <button
+                  type="button"
+                  class="header__login-button header__login-button_black"
+                >
+                  Login
+                </button>
+                <div class="header__login-block">
+                  <div class="header__login-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="login-form-id"
+                    >
+                      <h5 class="header__login-form-title">Login</h5>
+                      <button type="button" class="header__login-form-btn">
+                        <span></span>
+                      </button>
+                      <label for="input-email-login-form-id">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="form[email]"
+                        data-error="Error"
+                        placeholder="Enter your email address"
+                        class="input-email-login-form input"
+                        id="input-email-login-form-id"
+                      />
+                      <label for="input-password-form-id">Password</label>
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-login-form input"
+                        id="input-password-login-form-id"
+                      />
+                      <div class="input-password-login-form__text">
+                        Forgot your password?
+                      </div>
+
+                      <button type="submit" class="input-login-form-button btn">
+                        Sign In
+                      </button>
+                      <div
+                        class="input-password-login-form__text input-password-login-form__text_two"
+                      >
+                        or
+                      </div>
+                      <button type="button" class="input-login-form-button-btn">
+                        Sign In with Google
+                      </button>
+                      <div class="input-password-login-form__text-two">
+                        Don’t have an account ?
+                        <span> Sign Up </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__forgot-password-block">
+                  <div class="header__forgot-password-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="forgot-password-form-id"
+                    >
+                      <div class="header__forgot-password-image">
+                        <img src="@img/header/key.png" alt="Image" />
+                      </div>
+
+                      <h5 class="header__forgot-password-title">
+                        Forgot Password
+                      </h5>
+                      <div class="input-forgot-password-form__text">
+                        <a href=""
+                          >No worries, we'll send you reset instructions.</a
+                        >
+                      </div>
+                      <label for="input-email-forgot-password-form-id">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="form[email]"
+                        data-error="Error"
+                        placeholder="Enter your email address"
+                        class="input-email-forgot-password-form input"
+                        id="input-email-forgot-password-form-id"
+                      />
+                      <button
+                        type="button"
+                        class="input-forgot-password-form-button"
+                      >
+                        Reset Password
+                      </button>
+                      <div class="input-forgot-password-form__text-two">
+                        Back to Login
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__check-your-email-block">
+                  <div class="check-your-email-form">
+                    <div class="header__check-your-email-form">
+                      <form
+                        action="files/sendmail/sendmail.php"
+                        method="POST"
+                        id="check-your-email-form-id"
+                      >
+                        <div class="header__check-your-email-image">
+                          <img src="@img/header/email.png" alt="Image" />
+                        </div>
+
+                        <h5 class="header__check-your-email-title">
+                          Check your email
+                        </h5>
+                        <div class="input-check-your-email-form__text">
+                          <a href=""
+                            >We sent a password reset link to
+                            <br />loremipsum@gmail.com</a
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          class="input-check-your-email-form-button"
+                        >
+                          Open email app
+                        </button>
+                        <div class="input-check-your-email-form__text-one">
+                          Didn't receive the email?
+                          <span> Click to resend </span>
+                        </div>
+                        <div class="input-check-your-email-form__text-two">
+                          Back to Login
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__set-new-password-block">
+                  <div class="header__set-new-password-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="login-form-np-id"
+                    >
+                      <div class="header__set-new-password-image">
+                        <img src="@img/header/key.png" alt="Image" />
+                      </div>
+                      <h5 class="header__set-new-password-form-title">
+                        Set New Password
+                      </h5>
+                      <div class="input-set-new-password-form__text">
+                        Your new password must be different from previously used
+                        passwords.
+                      </div>
+                      <label for="input-set-new-password-form-id"
+                        >New Password</label
+                      >
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-login-form input"
+                        id="input-set-new-password-form-id"
+                      />
+                      <label for="input-password-set-new-password-form-cf-id"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-set-new-password-form input"
+                        id="input-password-set-new-password-form-cf-id"
+                      />
+                      <button
+                        type="button"
+                        class="input-set-new-password-form-button btn"
+                      >
+                        Reset Password
+                      </button>
+                      <div class="input-set-new-password-form__text-two">
+                        Back to Login
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__password-reset-block">
+                  <div class="password-reset-form">
+                    <div class="header__password-reset-form">
+                      <form
+                        action="files/sendmail/sendmail.php"
+                        method="POST"
+                        id="password-reset-form-id"
+                      >
+                        <div class="header__password-reset-image">
+                          <img src="@img/header/check.png" alt="Image" />
+                        </div>
+
+                        <h5 class="header__password-reset-title">
+                          Password Reset
+                        </h5>
+                        <div class="input-password-reset-form__text">
+                          <a href=""
+                            >Your password has been successfully reset. Click
+                            below to login in magically.</a
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          class="input-password-reset-form-button"
+                        >
+                          Continue
+                        </button>
+                        <div class="input-password-reset-form__text-two">
+                          Back to Login
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- sign-up -->
+              <div class="header__sign-up header__sign-up_black--">
+                <button
+                  type="button"
+                  class="header__sign-up-button header__sign-up-button_black--"
+                >
+                  Sign Up
+                </button>
+                <div class="header__sign-up-block">
+                  <div class="header__sign-up-form">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="sign-up-form-id"
+                    >
+                      <h5 class="header__sign-up-form-title">Create Account</h5>
+                      <button type="button" class="header__sign-up-form-btn">
+                        <span></span>
+                      </button>
+                      <label for="input-name-sign-up-form-id"
+                        >Name and Surname</label
+                      >
+                      <input
+                        type="text"
+                        name="form[name]"
+                        data-error="Error"
+                        placeholder="Enter your name and surname"
+                        class="input-name-sign-up-form input"
+                        id="input-name-sign-up-form-id"
+                      />
+                      <label for="input-email-sign-up-form-id">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="form[email]"
+                        data-error="Error"
+                        placeholder="Enter your email address"
+                        class="input-email-sign-up-form input"
+                        id="input-email-sign-up-form-id"
+                      />
+                      <label for="input-password-sign-up-form-id"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        name="form[password]"
+                        data-error="Error"
+                        placeholder="Enter your password"
+                        class="input-paasword-login-form input"
+                        id="input-password-sign-up-form-id"
+                      />
+                      <div class="input-check-sign-up-form__check">
+                        <div class="checkbox">
+                          <input
+                            id="c_1"
+                            data-error="Помилка"
+                            class="checkbox__input"
+                            type="checkbox"
+                            value="1"
+                            name="form[check]"
+                          />
+                          <label for="c_1" class="checkbox__label"
+                            ><span class="checkbox__text"
+                              >I agree with <span>Terms</span> and
+                              <span>Privacy</span>
+                            </span></label
+                          >
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="input-sign-up-form-button btn"
+                      >
+                        Sign In
+                      </button>
+                      <div
+                        class="input-password-sign-up-form__text input-password-sign-up-form__text_two"
+                      >
+                        or
+                      </div>
+                      <button
+                        type="button"
+                        class="input-sign-up-form-button-btn"
+                      >
+                        Sign In with Google
+                      </button>
+                      <div class="input-password-sign-up-form__text-two">
+                        Already have an account?
+                        <span> Log In </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- main -->
+      <main class="page">
+        <section class="section-one-puch">
+          <div class="section-one-puch__container">
+            <div class="section-one-puch__line">
+              <img src="@img/Purchase/Progress Bar.png" alt="Image" />
+            </div>
+            <div class="section-one-puch__row">
+              <div class="section-one-puch__block-left">
+                <div class="section-one-puch__form">
+                  <form
+                    action="files/sendmail/sendmail.php"
+                    method="POST"
+                    id="form-purchase"
+                  >
+                    <label for="input-date-section-one-puch-block-left-id"
+                      >When you will visit?</label
+                    >
+                    <input
+                      data-datepicker
+                      type="text"
+                      name="form[date]"
+                      data-error="Error"
+                      placeholder=""
+                      class="input-section-one-puch__block-left input"
+                      id="input-date-section-one-puch-block-left-id"
+                    />
+                    <label for="input-time-section-one-puch-block-left-id"
+                      >Which time?</label
+                    >
+                    <input
+                      data-datepicker
+                      type="text"
+                      name="form[time]"
+                      data-error="Error"
+                      placeholder="15:00"
+                      class="input-section-one-puch__block-left input"
+                      id="input-time-section-one-puch-block-left-id"
+                    />
+                  </form>
+                </div>
+                <h4 class="section-one-puch__block-left-title">
+                  Select Your Tickets
+                </h4>
+                <ul class="section-one-puch__block-left-list">
+                  <li>Free for kids under 6 and disabled visitors (74%+)</li>
+                  <li>
+                    Pregnant women, families with strollers, and visitors on
+                    crutches can buy priority tickets at the venue
+                  </li>
+                </ul>
+                <div class="section-one-puch__box-quantity-row">
+                  <div class="section-one-puch__box-quantity-row-left">
+                    <div class="section-one-puch__box-quantity-row-left-title">
+                      Child (6-17)
+                    </div>
+                    <ul class="section-one-puch__box-quantity-row-left-list">
+                      <li>
+                        With valid ID Only in combination with: Adult (18+)
+                      </li>
+                      <li>Only in combination with: Adult (18+)</li>
+                    </ul>
+                    <div class="section-one-puch__box-quantity-row-left-prace">
+                      €22.00
+                    </div>
+                  </div>
+                  <div data-quantity class="qu quantity">
+                    <button
+                      data-quantity-minus
+                      type="button"
+                      class="qu__button quantity__button quantity__button--minus"
+                    ></button>
+                    <div class="qu__input quantity__input">
+                      <input
+                        data-quantity-value
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        value="1"
+                      />
+                    </div>
+                    <button
+                      data-quantity-plus
+                      type="button"
+                      class="qu__button quantity__button quantity__button--plus"
+                    ></button>
+                  </div>
+                </div>
+                <div class="section-one-puch__box-quantity-row">
+                  <div class="section-one-puch__box-quantity-row-left">
+                    <div class="section-one-puch__box-quantity-row-left-title">
+                      Infant (0-5)
+                    </div>
+                    <ul class="section-one-puch__box-quantity-row-left-list">
+                      <li>Only in combination with: Adult (18+)</li>
+                    </ul>
+                    <div class="section-one-puch__box-quantity-row-left-prace">
+                      FREE
+                    </div>
+                  </div>
+                  <div data-quantity class="qu quantity">
+                    <button
+                      data-quantity-minus
+                      type="button"
+                      class="qu__button quantity__button quantity__button--minus"
+                    ></button>
+                    <div class="qu__input quantity__input">
+                      <input
+                        data-quantity-value
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        value="1"
+                      />
+                    </div>
+                    <button
+                      data-quantity-plus
+                      type="button"
+                      class="qu__button quantity__button quantity__button--plus"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <article class="section-one-puch__block-right">
+                <div class="section-one-puch__block-right-title">
+                  Your Tickets Overview
+                </div>
+                <div class="section-one-puch__block-right-row">
+                  <div class="section-one-puch__block-right-image">
+                    <img src="@img/Purchase/1.png" alt="Image" />
+                  </div>
+                  <div class="section-one-puch__block-right-column">
+                    <div class="section-one-puch__block-right-column-title">
+                      Wine tasting In Tuscany
+                    </div>
+                    <div class="section-one-puch__block-right-column-text">
+                      FRI, 23 DEC 2022
+                    </div>
+                    <div class="section-one-puch__block-right-column-text-two">
+                      15:00
+                    </div>
+                  </div>
+                </div>
+                <div class="section-one-puch__block-right-row-two">
+                  <div class="section-one-puch__block-right-row-two-number">
+                    2
+                  </div>
+                  <div class="section-one-puch__block-right-row-two-text">
+                    Adult (18+) (€32.00)
+                  </div>
+                  <div class="section-one-puch__block-right-row-two-prace">
+                    €64.00
+                  </div>
+                </div>
+                <div class="section-one-puch__block-right-row-two-two">
+                  <div class="section-one-puch__block-right-row-two-number-two">
+                    1
+                  </div>
+                  <div class="section-one-puch__block-right-row-two-text-two">
+                    Child (6-17)
+                  </div>
+                  <div class="section-one-puch__block-right-row-two-prace-two">
+                    €22.00
+                  </div>
+                </div>
+                <div class="section-one-puch__block-right-row-two-three">
+                  <div
+                    class="section-one-puch__block-right-row-two-number-two-three"
+                  >
+                    1
+                  </div>
+                  <div
+                    class="section-one-puch__block-right-row-two-text-two-three"
+                  >
+                    Infant (0-5)
+                  </div>
+                  <div
+                    class="section-one-puch__block-right-row-two-prace-two-three"
+                  >
+                    €0.00
+                  </div>
+                </div>
+                <div class="section-one-puch__block-right-row-two-four">
+                  <div
+                    class="section-one-puch__block-right-row-two-text-two-four"
+                  >
+                    Total Price
+                  </div>
+                  <div
+                    class="section-one-puch__block-right-row-two-prace-two-four"
+                  >
+                    €86.00
+                  </div>
+                </div>
+                <button type="submit" class="section-one-puch__button btn">
+                  Go to the Next Step
+                </button>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
