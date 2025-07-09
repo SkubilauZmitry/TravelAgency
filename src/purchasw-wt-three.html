@@ -403,118 +403,125 @@
               <img src="@img/Purchase/Progress Bar.png" alt="Image" />
             </div>
             <div class="section-one-puch__row">
-              <div class="section-one-puch__block-left">
-                <div class="section-one-puch__form">
-                  <form
-                    action="files/sendmail/sendmail.php"
-                    method="POST"
-                    id="form-purchase"
+              <div
+                class="section-one-puch__block-left-three section-one-puch__block-left"
+              >
+                <h2 class="section-one-puch-three__title">
+                  Select a payment method
+                </h2>
+                <div class="section-one-puch-three__text-box">
+                  <div
+                    class="section-one-puch-three__text-box-checkbox checkbox"
                   >
-                    <label for="input-date-section-one-puch-block-left-id"
-                      >When you will visit?</label
-                    >
                     <input
-                      data-datepicker
-                      type="text"
-                      name="form[date]"
-                      data-error="Error"
-                      placeholder=""
-                      class="input-section-one-puch__block-left input"
-                      id="input-date-section-one-puch-block-left-id"
+                      id="c_2"
+                      data-error="Помилка"
+                      class="section-one-puch-three__text-box-checkbox-input checkbox__input"
+                      type="checkbox"
+                      value="1"
+                      name="form[]"
                     />
-                    <label for="input-time-section-one-puch-block-left-id"
-                      >Which time?</label
+                    <label for="c_2" class="checkbox__label"
+                      ><span
+                        class="section-one-puch-three__text-box-checkbox-text checkbox__text"
+                        >PayPal</span
+                      ></label
                     >
-                    <input
-                      data-datepicker
-                      type="text"
-                      name="form[time]"
-                      data-error="Error"
-                      placeholder="15:00"
-                      class="input-section-one-puch__block-left input"
-                      id="input-time-section-one-puch-block-left-id"
-                    />
-                  </form>
-                </div>
-                <h4 class="section-one-puch__block-left-title">
-                  Select Your Tickets
-                </h4>
-                <ul class="section-one-puch__block-left-list">
-                  <li>Free for kids under 6 and disabled visitors (74%+)</li>
-                  <li>
-                    Pregnant women, families with strollers, and visitors on
-                    crutches can buy priority tickets at the venue
-                  </li>
-                </ul>
-                <div class="section-one-puch__box-quantity-row">
-                  <div class="section-one-puch__box-quantity-row-left">
-                    <div class="section-one-puch__box-quantity-row-left-title">
-                      Child (6-17)
-                    </div>
-                    <ul class="section-one-puch__box-quantity-row-left-list">
-                      <li>
-                        With valid ID Only in combination with: Adult (18+)
-                      </li>
-                      <li>Only in combination with: Adult (18+)</li>
-                    </ul>
-                    <div class="section-one-puch__box-quantity-row-left-prace">
-                      €22.00
-                    </div>
                   </div>
-                  <div data-quantity class="qu quantity">
-                    <button
-                      data-quantity-minus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--minus"
-                    ></button>
-                    <div class="qu__input quantity__input">
-                      <input
-                        data-quantity-value
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        value="1"
-                      />
-                    </div>
-                    <button
-                      data-quantity-plus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--plus"
-                    ></button>
+                  <div class="section-one-puch-three__text-box-text">
+                    You will be redirected to the PayPal website after
+                    submitting your order
                   </div>
                 </div>
-                <div class="section-one-puch__box-quantity-row">
-                  <div class="section-one-puch__box-quantity-row-left">
-                    <div class="section-one-puch__box-quantity-row-left-title">
-                      Infant (0-5)
-                    </div>
-                    <ul class="section-one-puch__box-quantity-row-left-list">
-                      <li>Only in combination with: Adult (18+)</li>
-                    </ul>
-                    <div class="section-one-puch__box-quantity-row-left-prace">
-                      FREE
+                <div class="section-one-puch-three__text-box-two">
+                  <div class="section-one-puch-three__text-box-two-row">
+                    <h4 class="section-one-puch-three__text-box-two-title">
+                      Pay with Credit Card
+                    </h4>
+                    <div class="section-one-puch-three__text-box-two-box-icon">
+                      <img src="@img/Purchase/Visa.png" alt="Image" />
+                      <img src="@img/Purchase/Discover.png" alt="Image" />
+                      <img src="@img/Purchase/Maestro.png" alt="Image" />
+                      <img src="@img/Purchase/Mastercard.png" alt="Image" />
                     </div>
                   </div>
-                  <div data-quantity class="qu quantity">
-                    <button
-                      data-quantity-minus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--minus"
-                    ></button>
-                    <div class="qu__input quantity__input">
-                      <input
-                        data-quantity-value
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        value="1"
-                      />
-                    </div>
-                    <button
-                      data-quantity-plus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--plus"
-                    ></button>
+                  <div class="section-one-puch-three__form-puch-three">
+                    <form
+                      action="files/sendmail/sendmail.php"
+                      method="POST"
+                      id="form-puch-three-id"
+                    >
+                      <div class="section-one-puch-three__form-puch-three-row">
+                        <div
+                          class="section-one-puch-three__form-puch-three-number"
+                        >
+                          <label
+                            for="input-number-form-puch-three-id"
+                            class="input-label-number-form-puch-three"
+                            >Card number</label
+                          >
+                          <input
+                            type="text"
+                            name="form[number]"
+                            data-error="Error"
+                            placeholder="xxxx-xxxx-xxxx-xxxx"
+                            class="input-number-form-puch-three input"
+                            id="input-number-form-puch-three-id"
+                            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                          />
+                        </div>
+                        <div
+                          class="section-one-puch-three__form-puch-three-date"
+                        >
+                          <label
+                            for="input-date-form-puch-three-id"
+                            class="input-label-date-form-puch-three"
+                            >Expiration Date</label
+                          >
+                          <input
+                            type="text"
+                            name="form[number]"
+                            data-error="Error"
+                            placeholder="MM/YY"
+                            class="input-date-form-puch-three input"
+                            id="input-date-form-puch-three-id"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="section-one-puch-three__form-puch-three-row-two"
+                      >
+                        <div
+                          class="section-one-puch-three__form-puch-three-security-code"
+                        >
+                          <label
+                            for="input-security-code-form-puch-three-id"
+                            class="input-label-security-code-form-puch-three"
+                            >Card Security Code</label
+                          >
+                          <input
+                            type="password"
+                            name="form[code]"
+                            data-error="Error"
+                            placeholder="***"
+                            class="input-security-code-form-puch-three input"
+                            id="input-security-code-form-puch-three-id"
+                            pattern="[0-9]{3}"
+                          />
+                        </div>
+
+                        <div class="input-security-code-form-puch-three__text">
+                          <a href="">What is this?</a>
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="section-one-puch-three__form-puch-three-button btn"
+                      >
+                        Send
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -589,8 +596,8 @@
                     €86.00
                   </div>
                 </div>
-                <button type="submit" class="section-one-puch__button btn">
-                  <a href="purchase-wt-two.html">Go to the Next Step</a>
+                <button type="button" class="section-one-puch__button btn">
+                  <a href="completed-order.html">Go to the Next Step</a>
                 </button>
               </article>
             </div>

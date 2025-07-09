@@ -125,6 +125,7 @@
     position: relative;
     z-index: 15;
     top: 452px;
+    padding: toRem(0) toRem(20) toRem(0) toRem(0);
     @media (max-width: $pc) {
         top: 350px;
     }

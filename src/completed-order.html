@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"Search results" })
+  @@include('html/_head.htm',{ "title":"Completed order" })
   <body>
     <div class="wrapper">
       <!-- header -->
@@ -397,207 +397,25 @@
       </header>
       <!-- main -->
       <main class="page">
-        <section class="section-one-puch">
-          <div class="section-one-puch__container">
-            <div class="section-one-puch__line">
-              <img src="@img/Purchase/Progress Bar.png" alt="Image" />
+        <section class="section-one-coor">
+          <div class="section-one-coor__container">
+            <div class="section-one-coor__image">
+              <img
+                src="@img/Purchase/icon-check.png"
+                alt="Image"
+                class="section-one-coor__image ibg"
+              />
             </div>
-            <div class="section-one-puch__row">
-              <div class="section-one-puch__block-left">
-                <div class="section-one-puch__form">
-                  <form
-                    action="files/sendmail/sendmail.php"
-                    method="POST"
-                    id="form-purchase"
-                  >
-                    <label for="input-date-section-one-puch-block-left-id"
-                      >When you will visit?</label
-                    >
-                    <input
-                      data-datepicker
-                      type="text"
-                      name="form[date]"
-                      data-error="Error"
-                      placeholder=""
-                      class="input-section-one-puch__block-left input"
-                      id="input-date-section-one-puch-block-left-id"
-                    />
-                    <label for="input-time-section-one-puch-block-left-id"
-                      >Which time?</label
-                    >
-                    <input
-                      data-datepicker
-                      type="text"
-                      name="form[time]"
-                      data-error="Error"
-                      placeholder="15:00"
-                      class="input-section-one-puch__block-left input"
-                      id="input-time-section-one-puch-block-left-id"
-                    />
-                  </form>
-                </div>
-                <h4 class="section-one-puch__block-left-title">
-                  Select Your Tickets
-                </h4>
-                <ul class="section-one-puch__block-left-list">
-                  <li>Free for kids under 6 and disabled visitors (74%+)</li>
-                  <li>
-                    Pregnant women, families with strollers, and visitors on
-                    crutches can buy priority tickets at the venue
-                  </li>
-                </ul>
-                <div class="section-one-puch__box-quantity-row">
-                  <div class="section-one-puch__box-quantity-row-left">
-                    <div class="section-one-puch__box-quantity-row-left-title">
-                      Child (6-17)
-                    </div>
-                    <ul class="section-one-puch__box-quantity-row-left-list">
-                      <li>
-                        With valid ID Only in combination with: Adult (18+)
-                      </li>
-                      <li>Only in combination with: Adult (18+)</li>
-                    </ul>
-                    <div class="section-one-puch__box-quantity-row-left-prace">
-                      €22.00
-                    </div>
-                  </div>
-                  <div data-quantity class="qu quantity">
-                    <button
-                      data-quantity-minus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--minus"
-                    ></button>
-                    <div class="qu__input quantity__input">
-                      <input
-                        data-quantity-value
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        value="1"
-                      />
-                    </div>
-                    <button
-                      data-quantity-plus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--plus"
-                    ></button>
-                  </div>
-                </div>
-                <div class="section-one-puch__box-quantity-row">
-                  <div class="section-one-puch__box-quantity-row-left">
-                    <div class="section-one-puch__box-quantity-row-left-title">
-                      Infant (0-5)
-                    </div>
-                    <ul class="section-one-puch__box-quantity-row-left-list">
-                      <li>Only in combination with: Adult (18+)</li>
-                    </ul>
-                    <div class="section-one-puch__box-quantity-row-left-prace">
-                      FREE
-                    </div>
-                  </div>
-                  <div data-quantity class="qu quantity">
-                    <button
-                      data-quantity-minus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--minus"
-                    ></button>
-                    <div class="qu__input quantity__input">
-                      <input
-                        data-quantity-value
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        value="1"
-                      />
-                    </div>
-                    <button
-                      data-quantity-plus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--plus"
-                    ></button>
-                  </div>
-                </div>
-              </div>
-              <article class="section-one-puch__block-right">
-                <div class="section-one-puch__block-right-title">
-                  Your Tickets Overview
-                </div>
-                <div class="section-one-puch__block-right-row">
-                  <div class="section-one-puch__block-right-image">
-                    <img src="@img/Purchase/1.png" alt="Image" />
-                  </div>
-                  <div class="section-one-puch__block-right-column">
-                    <div class="section-one-puch__block-right-column-title">
-                      Wine tasting In Tuscany
-                    </div>
-                    <div class="section-one-puch__block-right-column-text">
-                      FRI, 23 DEC 2022
-                    </div>
-                    <div class="section-one-puch__block-right-column-text-two">
-                      15:00
-                    </div>
-                  </div>
-                </div>
-                <div class="section-one-puch__block-right-row-two">
-                  <div class="section-one-puch__block-right-row-two-number">
-                    2
-                  </div>
-                  <div class="section-one-puch__block-right-row-two-text">
-                    Adult (18+) (€32.00)
-                  </div>
-                  <div class="section-one-puch__block-right-row-two-prace">
-                    €64.00
-                  </div>
-                </div>
-                <div class="section-one-puch__block-right-row-two-two">
-                  <div class="section-one-puch__block-right-row-two-number-two">
-                    1
-                  </div>
-                  <div class="section-one-puch__block-right-row-two-text-two">
-                    Child (6-17)
-                  </div>
-                  <div class="section-one-puch__block-right-row-two-prace-two">
-                    €22.00
-                  </div>
-                </div>
-                <div class="section-one-puch__block-right-row-two-three">
-                  <div
-                    class="section-one-puch__block-right-row-two-number-two-three"
-                  >
-                    1
-                  </div>
-                  <div
-                    class="section-one-puch__block-right-row-two-text-two-three"
-                  >
-                    Infant (0-5)
-                  </div>
-                  <div
-                    class="section-one-puch__block-right-row-two-prace-two-three"
-                  >
-                    €0.00
-                  </div>
-                </div>
-                <div class="section-one-puch__block-right-row-two-four">
-                  <div
-                    class="section-one-puch__block-right-row-two-text-two-four"
-                  >
-                    Total Price
-                  </div>
-                  <div
-                    class="section-one-puch__block-right-row-two-prace-two-four"
-                  >
-                    €86.00
-                  </div>
-                </div>
-                <button type="submit" class="section-one-puch__button btn">
-                  <a href="purchase-wt-two.html">Go to the Next Step</a>
-                </button>
-              </article>
+            <h2 class="section-one-coor__title">Your Order is complete!</h2>
+            <div class="section-one-coor__text">
+              You will be receiving a confirmation email with order details.
             </div>
+            <a href="home.html" class="section-one-coor__button btn"
+              >Go to the Home Page</a
+            >
           </div>
         </section>
       </main>
-      @@include('html/_footer.htm',{})
     </div>
     @@include('html/_js.htm',{})
   </body>

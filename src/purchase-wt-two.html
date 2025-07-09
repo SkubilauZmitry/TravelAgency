@@ -400,122 +400,82 @@
         <section class="section-one-puch">
           <div class="section-one-puch__container">
             <div class="section-one-puch__line">
-              <img src="@img/Purchase/Progress Bar.png" alt="Image" />
+              <img src="@img/Purchase/Progress Bar2.png" alt="Image" />
             </div>
             <div class="section-one-puch__row">
-              <div class="section-one-puch__block-left">
-                <div class="section-one-puch__form">
+              <div
+                class="section-one-puch-two__block-left section-one-puch__block-left"
+              >
+                <div class="section-one-puch-two__title">
+                  Who shall we send these tickets to?
+                </div>
+                <div class="section-one-puch-two__form">
                   <form
                     action="files/sendmail/sendmail.php"
                     method="POST"
-                    id="form-purchase"
+                    id="form-puch-two"
                   >
-                    <label for="input-date-section-one-puch-block-left-id"
-                      >When you will visit?</label
+                    <div class="section-one-puch-two__row-one">
+                      <div class="section-one-puch-two__name">
+                        <label for="input-name-puch-two-id">Name </label>
+                        <input
+                          type="text"
+                          name="form[name]"
+                          data-error="Error"
+                          placeholder="Enter your name "
+                          class="input-puch-two input"
+                          id="input-name-puch-two-id"
+                        />
+                      </div>
+                      <div class="section-one-puch-two__surname">
+                        <label for="input-surname-puch-two-id"> Surname </label>
+                        <input
+                          type="text"
+                          name="form[surname]"
+                          data-error="Error"
+                          placeholder="Enter your surname "
+                          class="input-puch-two input"
+                          id="input-surname-puch-two-id"
+                        />
+                      </div>
+                    </div>
+                    <div class="section-one-puch-two__row-two">
+                      <div class="section-one-puch-two__tel">
+                        <label for="input-tel-puch-two-id"
+                          >Telephone Number
+                        </label>
+                        <input
+                          type="tel"
+                          name="form[tel]"
+                          data-error="Error"
+                          placeholder="Enter your telephone number"
+                          class="input-puch-two input"
+                          id="input-tel-puch-two-id"
+                        />
+                      </div>
+
+                      <div class="section-one-puch-two_email">
+                        <label for="input-email-puch-two-id"
+                          >Email Address</label
+                        >
+                        <input
+                          type="email"
+                          name="form[email]"
+                          data-error="Error"
+                          placeholder="Enter your email address "
+                          class="input-puch-two input"
+                          id="input-email-puch-two-id"
+                        />
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="section-one-puch-two__block-left-button btn"
                     >
-                    <input
-                      data-datepicker
-                      type="text"
-                      name="form[date]"
-                      data-error="Error"
-                      placeholder=""
-                      class="input-section-one-puch__block-left input"
-                      id="input-date-section-one-puch-block-left-id"
-                    />
-                    <label for="input-time-section-one-puch-block-left-id"
-                      >Which time?</label
-                    >
-                    <input
-                      data-datepicker
-                      type="text"
-                      name="form[time]"
-                      data-error="Error"
-                      placeholder="15:00"
-                      class="input-section-one-puch__block-left input"
-                      id="input-time-section-one-puch-block-left-id"
-                    />
+                      Send
+                    </button>
                   </form>
-                </div>
-                <h4 class="section-one-puch__block-left-title">
-                  Select Your Tickets
-                </h4>
-                <ul class="section-one-puch__block-left-list">
-                  <li>Free for kids under 6 and disabled visitors (74%+)</li>
-                  <li>
-                    Pregnant women, families with strollers, and visitors on
-                    crutches can buy priority tickets at the venue
-                  </li>
-                </ul>
-                <div class="section-one-puch__box-quantity-row">
-                  <div class="section-one-puch__box-quantity-row-left">
-                    <div class="section-one-puch__box-quantity-row-left-title">
-                      Child (6-17)
-                    </div>
-                    <ul class="section-one-puch__box-quantity-row-left-list">
-                      <li>
-                        With valid ID Only in combination with: Adult (18+)
-                      </li>
-                      <li>Only in combination with: Adult (18+)</li>
-                    </ul>
-                    <div class="section-one-puch__box-quantity-row-left-prace">
-                      €22.00
-                    </div>
-                  </div>
-                  <div data-quantity class="qu quantity">
-                    <button
-                      data-quantity-minus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--minus"
-                    ></button>
-                    <div class="qu__input quantity__input">
-                      <input
-                        data-quantity-value
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        value="1"
-                      />
-                    </div>
-                    <button
-                      data-quantity-plus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--plus"
-                    ></button>
-                  </div>
-                </div>
-                <div class="section-one-puch__box-quantity-row">
-                  <div class="section-one-puch__box-quantity-row-left">
-                    <div class="section-one-puch__box-quantity-row-left-title">
-                      Infant (0-5)
-                    </div>
-                    <ul class="section-one-puch__box-quantity-row-left-list">
-                      <li>Only in combination with: Adult (18+)</li>
-                    </ul>
-                    <div class="section-one-puch__box-quantity-row-left-prace">
-                      FREE
-                    </div>
-                  </div>
-                  <div data-quantity class="qu quantity">
-                    <button
-                      data-quantity-minus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--minus"
-                    ></button>
-                    <div class="qu__input quantity__input">
-                      <input
-                        data-quantity-value
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        value="1"
-                      />
-                    </div>
-                    <button
-                      data-quantity-plus
-                      type="button"
-                      class="qu__button quantity__button quantity__button--plus"
-                    ></button>
-                  </div>
                 </div>
               </div>
               <article class="section-one-puch__block-right">
@@ -590,7 +550,7 @@
                   </div>
                 </div>
                 <button type="submit" class="section-one-puch__button btn">
-                  <a href="purchase-wt-two.html">Go to the Next Step</a>
+                  <a href="purchasw-wt-three.html">Go to the Next Step</a>
                 </button>
               </article>
             </div>
